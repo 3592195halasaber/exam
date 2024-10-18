@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>yummy</title>
+</head>
+
+<body style="overflow: visible;" class="bg-black">
+    <div class="spinner position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center"
+        style="display: none;">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <div class="section ">
+        <div class="home ">
+            <div class="item1 d-flex justify-content-between  position-fixed top-0 bottom-0  bg-white z-3">
+                <div class="list d-flex flex-column bg-black  p-5 position-relative we ">
+                    <div class="link position-relative overflow-hidden z-">
+                        <ul class="list-unstyled overflow-hidden ">
+
+                            <li class="mb-3 position-relative cursor-pointer  text-white " style="cursor:pointer"
+                                onclick="displaySearchInputs();closenav()">
+                                Search</li>
+                            <li class="mb-3 position-relative text-white" style="cursor:pointer"
+                                onclick="getCategories();closenav()">
+                                Categories</li>
+                            <li class="mb-3 position-relative  text-white" style="cursor:pointer"
+                                onclick="getArea();closenav()">
+                                Area</li>
+                            <li class="mb-3 position-relative text-white" style="cursor:pointer"
+                                onclick="getIngredients();closenav()"> Ingredients</li>
+                            <li class="mb-3 position-relative text-white" style="cursor:pointer"
+                                onclick="showContacts();closenav()">
+                                Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="end-footer text-white   position-absolute m-3 start-0 bottom-0 ">
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="footer">
+                            <p>Copyright Â© 2019 All Rights
+                                <br>Reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-header d-flex flex-column justify-content-between text-center bg-white text-black wee">
+                    <img src="./logo.png" class="w-100 pt-2" alt="">
+                    <i id="open" class="fa-solid open-close-icon fa-2x fa-align-justify"
+                        style="font-size:30px;cursor:pointer"></i>
+                    <div class="d-flex flex-column pb-3">
+                        <i class="fa-solid fa-globe  p-2"></i>
+                        <i class="fa-solid fa-share-nodes p-2"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container w-75" id="searchContainer">
+        <div class="row py-4 " >
+  
+        </div>
+
+    </div>
+    <div class="min-vh-100  ">
+        <div class="inner-loading-screen  position-absolute  start-50  top-50 align-items-center"
+            style="display: none;">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <div class="container" id="submit">
+            <div class="row py-5 g-4 " id="rowData">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
